@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .box-hover{
+        @apply bg-black text-white font-medium p-2 border border-subcolor rounded-lg;
+    }
+    .btn{
+        @apply bg-primay py-3 px-6 rounded-lg font-Inter font-medium ;
+    }
+    p{
+        @apply text-subcolor ; 
+    }
+    h3 {
+        @apply text-2xl text-white font-bold;
+    }
+    span{
+        @apply text-primay;
+    }
+    .main-buttom{
+        @apply text-subcolor py-4 px-5 border border-bordercolor rounded-lg bg-dark2;
+    }
+    .main-buttom:hover , .inter-btn:hover{
+        @apply bg-dark1 text-white font-medium;
+    }
+    h2{
+        @apply text-4xl font-medium font-Kumbh text-white ;
+    }
+    .inter-btn{
+        @apply bg-dark1 text-subcolor border border-bordercolor p-2 rounded-full;
+    }
+    .categorie{
+        @apply p-[2rem] bg-dark2 border border-bordercolor rounded-lg ;
+    }
+    #blogs h4{
+        @apply text-white font-medium;
+    }
+    #footer h4 , #news h5{
+        @apply text-white font-medium;
+    }
+    #footer li {
+        @apply text-subcolor ;
+    }
+}
