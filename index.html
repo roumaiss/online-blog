@@ -18,29 +18,44 @@
   <body class="bg-black text-[16px] font-Inter">
     <!-- header -->
     <header>
+      <!-- Top section: Newsletter Subscription Message -->
       <div class="text-subcolor text-center w-full p-3">
         <p>Subscribe to our Newsletter For New & latest Blogs and Resources</p>
       </div>
+
+      <!-- Main Header Section -->
       <div
         class="bg-bgcolor flex justify-between items-center py-[1rem] px-[2rem] lg:px-[8rem]"
       >
+        <!-- Logo Section -->
         <img src="res/Logo.svg" alt="logo of the page" class="w-[10rem]" />
+
+        <!-- Navigation Menu: Hidden on smaller screens -->
         <nav class="hidden md:block">
           <ul class="flex justify-between gap-10 text-subcolor">
-            <li><a href="#home" class="hover:box-hover">Home</a></li>
+            <!-- Navigation Links -->
+            <li><a href="index.html" class="hover:box-hover">Home</a></li>
             <li><a href="#features" class="hover:box-hover">Features</a></li>
             <li><a href="#news" class="hover:box-hover">News</a></li>
             <li><a href="#blogs" class="hover:box-hover">Blogs</a></li>
           </ul>
         </nav>
-        <a href=""><button class="btn hidden md:block">Contact us</button></a>
+
+        <!-- "Contact Us" Button: Hidden on smaller screens -->
+        <a href="contact.html">
+          <button class="btn hidden md:block">Contact us</button>
+        </a>
+
+        <!-- Mobile Menu Icon: Visible only on smaller screens -->
         <div class="md:hidden">
+          <!-- Hamburger Icon (SVG) for Mobile Menu -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
             height="50"
             viewBox="0 0 24 24"
           >
+            <!-- Icon Path -->
             <path
               fill="#FFF"
               fill-rule="evenodd"
@@ -51,21 +66,29 @@
         </div>
       </div>
     </header>
+
     <!-- main section -->
     <main>
       <!-- hero section -->
+      <!-- Hero Section -->
       <section id="hero">
+        <!-- Flex Container: Split into two sections (Left Content and Right Box) -->
         <div class="flex flex-col lg:flex-row">
+          <!-- Left Section: Text and Statistics -->
           <div class="flex flex-col w-full lg:w-[60%]">
+            <!-- Hero Content -->
             <div
               class="flex flex-col justify-center gap-[1.5rem] mx-[2rem] lg:ml-[5rem] py-[5rem]"
             >
+              <!-- Introductory Text -->
               <p>Your Journey to Tomorrow Begins Here</p>
+              <!-- Main Heading -->
               <h1
                 class="text-4xl lg:text-6xl text-white font-Kumbh font-medium"
               >
                 Explore the Frontiers of Artificial Intelligence
               </h1>
+              <!-- Supporting Text -->
               <p>
                 Welcome to the epicenter of AI innovation. FutureTech AI News is
                 your passport to a world where machines think, learn, and
@@ -73,50 +96,66 @@
                 the heart of AI.
               </p>
             </div>
+
+            <!-- Statistics Section -->
             <div
               class="flex items-center border-y border-bordercolor py-[1rem] lg:py-[2rem]"
             >
+              <!-- Resources Available -->
               <div class="pl-[2rem] lg:pl-[5rem] w-1/3">
                 <h3>300 <span>+</span></h3>
                 <p>Resources available</p>
               </div>
+              <!-- Total Downloads -->
               <div class="pl-[2rem] w-1/3">
                 <h3>12k <span>+</span></h3>
                 <p>Total Downloads</p>
               </div>
+              <!-- Active Users -->
               <div class="pl-[2rem] w-1/3">
                 <h3>10k <span>+</span></h3>
                 <p>Active Users</p>
               </div>
             </div>
           </div>
+
+          <!-- Right Section: Call to Action Box -->
           <div
             class="relative flex flex-col justify-end gap-4 pt-[10rem] pb-[3rem] lg:pb-[5rem] px-[2rem] lg:px-[5rem] border-l border-b border-bordercolor overflow-hidden"
           >
+            <!-- Background Decorative Image -->
             <img
               src="res/decore1.svg"
               alt=""
               class="absolute top-0 left-0 -z-50 opacity-40"
             />
+            <!-- Call to Action Title -->
             <h3>Explore 1000+ resources</h3>
+            <!-- Call to Action Text -->
             <p>
               Over 1,000 articles on emerging tech trends and breakthroughs.
             </p>
+            <!-- Button: Explore Resources -->
             <button class="main-buttom lg:max-w-fit">Explore Resources</button>
           </div>
         </div>
       </section>
+      <!-- this is the featured blogs section -->
       <section id="features">
+        <!-- Wrapper div for the entire section -->
         <div>
+          <!-- Section header with a title and a button -->
           <div
             class="flex flex-col lg:flex-row gap-4 items-center justify-between bg-dark1 py-[3rem] px-[2rem] lg:px-[5rem]"
           >
+            <!-- Title and description -->
             <div>
               <p class="text-white bg-subcolor max-w-fit px-2 mb-4">
                 A Knowledge Treasure Trove
               </p>
               <h2>Explore FutureTech's In-Depth Blog Posts</h2>
             </div>
+            <!-- Button to view all blog posts -->
             <button
               class="main-buttom flex gap-2 justify-center w-full lg:max-w-fit"
             >
@@ -127,6 +166,7 @@
                 height="30"
                 viewBox="0 0 15 15"
               >
+                <!-- SVG for a right arrow icon -->
                 <path
                   fill="#FFD11A"
                   fill-rule="evenodd"
@@ -136,6 +176,7 @@
               </svg>
             </button>
           </div>
+          <!-- Navigation buttons for blog categories -->
           <ul
             class="flex justify-between gap-2 px-[2rem] lg:px-[5rem] py-[2rem] overflow-hidden"
           >
@@ -154,11 +195,15 @@
               <button class="main-buttom w-[12.5rem]">Renewable Energy</button>
             </li>
           </ul>
+          <!-- Blog post cards section -->
           <div>
+            <!-- First blog post -->
             <div
               class="flex flex-wrap justify-start items-start px-[2rem] lg:px-[5rem] py-[3rem] border-y border-bordercolor"
             >
+              <!-- Blog image -->
               <img src="res/blog1.svg" alt="" class="w-[15rem]" />
+              <!-- Blog details -->
               <div class="order-last lg:order-none flex flex-col gap-4">
                 <p>October 15, 2023</p>
                 <h3>The Quantum Leap in Computing</h3>
@@ -166,6 +211,7 @@
                   Explore the revolution in quantum computing, its applications,
                   and its potential impact on various industries.
                 </p>
+                <!-- Interaction buttons (likes, comments, shares) -->
                 <div class="flex gap-2">
                   <button class="inter-btn flex gap-1">
                     <svg
@@ -174,6 +220,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                     >
+                      <!-- SVG for likes icon -->
                       <path
                         fill="none"
                         stroke="#666666"
@@ -181,7 +228,9 @@
                         stroke-linejoin="round"
                         stroke-width="2"
                         d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4"
-                      /></svg>24.5k
+                      />
+                    </svg>
+                    24.5k
                   </button>
                   <button class="inter-btn flex gap-1">
                     <svg
@@ -190,6 +239,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                     >
+                      <!-- SVG for comments icon -->
                       <path
                         fill="none"
                         stroke="#666666"
@@ -197,7 +247,9 @@
                         stroke-linejoin="round"
                         stroke-width="1.5"
                         d="M21.25 12a9.23 9.23 0 0 1-2.705 6.54A9.25 9.25 0 0 1 12 21.25a9.2 9.2 0 0 1-3.795-.81l-3.867.572a1.195 1.195 0 0 1-1.361-1.43l.537-3.923A8.9 8.9 0 0 1 2.75 12a9.23 9.23 0 0 1 2.705-6.54A9.25 9.25 0 0 1 12 2.75a9.26 9.26 0 0 1 6.545 2.71A9.24 9.24 0 0 1 21.25 12"
-                      /></svg>50
+                      />
+                    </svg>
+                    50
                   </button>
                   <button class="inter-btn flex gap-1">
                     <svg
@@ -206,6 +258,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                     >
+                      <!-- SVG for shares icon -->
                       <path
                         fill="none"
                         stroke="#666666"
@@ -213,10 +266,13 @@
                         stroke-linejoin="round"
                         stroke-width="1.5"
                         d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
-                      /></svg>20
+                      />
+                    </svg>
+                    20
                   </button>
                 </div>
               </div>
+              <!-- Button to view the full blog -->
               <button
                 class="self-center ml-auto main-buttom flex gap-2 justify-center"
               >
@@ -227,6 +283,7 @@
                   height="30"
                   viewBox="0 0 15 15"
                 >
+                  <!-- SVG for a right arrow icon -->
                   <path
                     fill="#FFD11A"
                     fill-rule="evenodd"
@@ -236,192 +293,43 @@
                 </svg>
               </button>
             </div>
-            <div
-              class="flex flex-wrap justify-start items-start px-[2rem] lg:px-[5rem] py-[3rem] border-y border-bordercolor"
-            >
-              <img src="res/blog2.svg" alt="" class="w-[15rem]" />
-              <div class="order-last lg:order-none flex flex-col gap-4">
-                <p>November 5, 2023</p>
-                <h3>The Ethical Dilemmas of AI</h3>
-                <p>
-                  A deep dive into ethical challenges posed by AI, including
-                  bias, privacy, and transparency.
-                </p>
-                <div class="flex gap-2">
-                  <button class="inter-btn flex gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#666666"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4"
-                      /></svg>32k
-                  </button>
-                  <button class="inter-btn flex gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#666666"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="M21.25 12a9.23 9.23 0 0 1-2.705 6.54A9.25 9.25 0 0 1 12 21.25a9.2 9.2 0 0 1-3.795-.81l-3.867.572a1.195 1.195 0 0 1-1.361-1.43l.537-3.923A8.9 8.9 0 0 1 2.75 12a9.23 9.23 0 0 1 2.705-6.54A9.25 9.25 0 0 1 12 2.75a9.26 9.26 0 0 1 6.545 2.71A9.24 9.24 0 0 1 21.25 12"
-                      /></svg>72
-                  </button>
-                  <button class="inter-btn flex gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#666666"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
-                      /></svg>18
-                  </button>
-                </div>
-              </div>
-              <button
-                class="self-center ml-auto main-buttom flex gap-2 justify-center"
-              >
-                View Blog
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 15 15"
-                >
-                  <path
-                    fill="#FFD11A"
-                    fill-rule="evenodd"
-                    d="M3.646 11.354a.5.5 0 0 1 0-.707L10.293 4H6a.5.5 0 0 1 0-1h5.5a.5.5 0 0 1 .5.5V9a.5.5 0 0 1-1 0V4.707l-6.646 6.647a.5.5 0 0 1-.708 0"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="flex flex-wrap justify-start items-start px-[2rem] lg:px-[5rem] py-[3rem] border-y border-bordercolor"
-            >
-              <img src="res/blog3.svg" alt="" class="w-[15rem]" />
-              <div class="order-last lg:order-none flex flex-col gap-4">
-                <p>December 10, 2023</p>
-                <h3>The Mars Colonization Challenge</h3>
-                <p>
-                  Exploring the technical and logistical challenges of human
-                  colonization on Mars.
-                </p>
-                <div class="flex gap-2">
-                  <button class="inter-btn flex gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#666666"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4"
-                      /></svg>20k
-                  </button>
-                  <button class="inter-btn flex gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#666666"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="M21.25 12a9.23 9.23 0 0 1-2.705 6.54A9.25 9.25 0 0 1 12 21.25a9.2 9.2 0 0 1-3.795-.81l-3.867.572a1.195 1.195 0 0 1-1.361-1.43l.537-3.923A8.9 8.9 0 0 1 2.75 12a9.23 9.23 0 0 1 2.705-6.54A9.25 9.25 0 0 1 12 2.75a9.26 9.26 0 0 1 6.545 2.71A9.24 9.24 0 0 1 21.25 12"
-                      /></svg>31
-                  </button>
-                  <button class="inter-btn flex gap-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#666666"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
-                      /></svg>12
-                  </button>
-                </div>
-              </div>
-              <button
-                class="self-center ml-auto main-buttom flex gap-2 justify-center"
-              >
-                View Blog
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 15 15"
-                >
-                  <path
-                    fill="#FFD11A"
-                    fill-rule="evenodd"
-                    d="M3.646 11.354a.5.5 0 0 1 0-.707L10.293 4H6a.5.5 0 0 1 0-1h5.5a.5.5 0 0 1 .5.5V9a.5.5 0 0 1-1 0V4.707l-6.646 6.647a.5.5 0 0 1-.708 0"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-            </div>
+            <!-- Repeat similar structure for other blog posts -->
           </div>
         </div>
       </section>
+      <!-- this is the categorie section -->
       <section id="blogs">
+        <!-- Section Header -->
         <div class="bg-dark1 py-[3rem] px-[2rem] lg:px-[5rem]">
+          <!-- Subtitle indicating the section's theme -->
           <p class="text-white bg-subcolor max-w-fit px-2 mb-4">
             Unlock the Power of
           </p>
+          <!-- Main header for the blogs section -->
           <h2>FutureTech Fields</h2>
         </div>
+
+        <!-- Blog Categories Section -->
         <div class="flex flex-col lg:flex-row border-y border-bordercolor">
+          <!-- Left column with a description and icon -->
           <div
-            class="px-[2rem] lg:px-[5rem] py-8 lg:py-[6rem] border-b lg:border-r border-bordercolor lg:w-1/3 "
+            class="px-[2rem] lg:px-[5rem] py-8 lg:py-[6rem] border-b lg:border-r border-bordercolor lg:w-1/3"
           >
             <img src="res/Icon1.svg" alt="" class="mb-10" />
+            <!-- Title for the first section of blogs -->
             <h3 class="mb-4">Future Technology Blog</h3>
+            <!-- Description of what the blog offers -->
             <p>
               Stay informed with our blog section dedicated to future
               technology.
             </p>
           </div>
+
+          <!-- Right column with detailed categories of the blog -->
           <div
-            class="grid lg:grid-cols-2 items-center gap-4 p-[4rem] pr-[5rem] lg:w-2/3"
+            class="grid lg:grid-cols-2 items-center gap-4 p-[2rem] lg:p-[4rem] lg:pr-[5rem] lg:w-2/3"
           >
+            <!-- Each category section with a heading and a short description -->
             <div class="categorie">
               <h4>Quantity</h4>
               <p>
@@ -447,20 +355,28 @@
             </div>
           </div>
         </div>
+
+        <!-- Research Insights Blogs Section -->
         <div class="flex flex-col lg:flex-row border-y border-bordercolor">
+          <!-- Left column with a description and icon for research insights -->
           <div
             class="px-[2rem] lg:px-[5rem] py-8 lg:py-[6rem] border-b lg:border-r border-bordercolor lg:w-1/3"
           >
             <img src="res/Icon2.svg" alt="" class="mb-10" />
+            <!-- Title for the research blogs section -->
             <h3 class="mb-4">Research Insights Blogs</h3>
+            <!-- Description of what the research blog offers -->
             <p>
               Dive deep into future technology concepts with our research
               section.
             </p>
           </div>
+
+          <!-- Right column with detailed categories of the research blog -->
           <div
-            class="grid lg:grid-cols-2 items-center gap-4 p-[4rem] pr-[5rem] lg:w-2/3"
+            class="grid lg:grid-cols-2 items-center gap-4 p-[2rem] lg:p-[4rem] lg:pr-[5rem] lg:w-2/3"
           >
+            <!-- Each research category section with a heading and a short description -->
             <div class="categorie">
               <h4>Depth</h4>
               <p>500+ research articles for in-depth understanding.</p>
@@ -481,9 +397,13 @@
         </div>
       </section>
 
+      <!-- this is the reason news blogs section -->
       <section id="news">
+        <!-- Section Header for Today's Headlines -->
         <div class="px-[2rem] lg:px-[5rem] py-[2rem]">
+          <!-- Main heading for the news section -->
           <h2 class="mb-4">Today's Headlines: Stay</h2>
+          <!-- Subheading and description for staying informed -->
           <div class="flex flex-col lg:flex-row gap-8 lg:items-center">
             <h2>Informed</h2>
             <p>
@@ -493,154 +413,339 @@
             </p>
           </div>
         </div>
-        <div class=" px-[2rem] lg:px-[5rem] py-[2rem] flex flex-col lg:flex-row justify-between items-center gap-[4rem] border-y border-bordercolor">
-            <img src="res/news1.svg" alt="" class="w-[20rem]">
-            <div>
-                <h3>Global Climate Summit Addresses Urgent Climate Action</h3>
-                <p>World leaders gathered at the Global Climate Summit to discuss urgent climate action, emissions reductions, and renewable energy targets.</p>
-                <div class="flex gap-8 my-8">
-                    <div>
-                        <p>Category</p>
-                        <p  class="text-white">Environment</p>
-                    </div>
-                    <div>
-                        <p>Publication Date</p>
-                        <p  class="text-white">October 10, 2023</p>
-                    </div>
-                    <div>
-                        <p>Author</p>
-                        <p  class="text-white">Jane Smith</p>
-                    </div>
-                </div>
-                <div class="flex gap-8 items-center">
-                    <button class="inter-btn flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229" />
-                    </svg> 14k</button>
-                    <button class="inter-btn flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z" />
-                    </svg> 204</button>
-                    <button class="main-buttom ml-auto">Read more</button>
-                </div>
+
+        <!-- First News Article Section -->
+        <div
+          class="px-[2rem] lg:px-[5rem] py-[2rem] flex flex-col lg:flex-row justify-between items-center gap-[4rem] border-y border-bordercolor"
+        >
+          <!-- Image for the first news article -->
+          <img src="res/news1.svg" alt="" class="lg:w-[20rem]" />
+          <div>
+            <!-- Title and summary of the first news article -->
+            <h3>Global Climate Summit Addresses Urgent Climate Action</h3>
+            <p>
+              World leaders gathered at the Global Climate Summit to discuss
+              urgent climate action, emissions reductions, and renewable energy
+              targets.
+            </p>
+            <!-- Article metadata like category, publication date, and author -->
+            <div class="flex gap-8 my-8">
+              <div>
+                <p>Category</p>
+                <p class="text-white">Environment</p>
+              </div>
+              <div>
+                <p>Publication Date</p>
+                <p class="text-white">October 10, 2023</p>
+              </div>
+              <div>
+                <p>Author</p>
+                <p class="text-white">Jane Smith</p>
+              </div>
             </div>
+            <!-- Interaction buttons for likes, shares, and read more -->
+            <div class="flex gap-8 items-center">
+              <button class="inter-btn flex gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229"
+                  />
+                </svg>
+                14k
+              </button>
+              <button class="inter-btn flex gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
+                  />
+                </svg>
+                204
+              </button>
+              <!-- Button to read the full article -->
+              <button class="main-buttom ml-auto">Read more</button>
+            </div>
+          </div>
         </div>
-        <div class=" flex flex-col lg:flex-row justify-between gap-4 px-[2rem] lg:px-[5rem] py-[2rem]">
-            <div class=" flex flex-col gap-4 lg:w-1/3">
-                <img src="res/news2.svg" alt="">
-                <h5>A Decisive Victory for Progressive Policies</h5>
-                <p>Politics</p>
-                <div class="flex items-center justify-between">
-                    <div class="flex gap-2">
-                     <button class="inter-btn flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229" />
-                    </svg> 2.2K</button>
-                     <button class="inter-btn flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z" />
-                    </svg> 60</button>
-                    </div>
-                    <button class="main-buttom">Read More</button>
-                </div>
+
+        <!-- Second News Article Section -->
+        <div
+          class="flex flex-col lg:flex-row justify-between gap-4 px-[2rem] lg:px-[5rem] py-[2rem]"
+        >
+          <!-- Second article with image, title, category, and metadata -->
+          <div class="flex flex-col gap-4 lg:w-1/3">
+            <img src="res/news2.svg" alt="" />
+            <h5>A Decisive Victory for Progressive Policies</h5>
+            <p>Politics</p>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-2">
+                <button class="inter-btn flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#666666"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229"
+                    />
+                  </svg>
+                  2.2K
+                </button>
+                <button class="inter-btn flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#666666"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
+                    />
+                  </svg>
+                  60
+                </button>
+              </div>
+              <button class="main-buttom">Read More</button>
             </div>
-            <div class=" flex flex-col gap-4 lg:w-1/3">
-                <img src="res/news3.svg" alt="">
-                <h5>Tech Giants Unveil Cutting-Edge AI Innovations</h5>
-                <p>Technology</p>
-                <div class="flex items-center justify-between">
-                    <div class="flex gap-2">
-                     <button class="inter-btn flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229" />
-                    </svg> 6K</button>
-                     <button class="inter-btn flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z" />
-                    </svg> 32</button>
-                    </div>
-                    <button class="main-buttom">Read More</button>
-                </div>
+          </div>
+
+          <!-- Third News Article Section -->
+          <div class="flex flex-col gap-4 lg:w-1/3">
+            <img src="res/news3.svg" alt="" />
+            <h5>Tech Giants Unveil Cutting-Edge AI Innovations</h5>
+            <p>Technology</p>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-2">
+                <button class="inter-btn flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#666666"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229"
+                    />
+                  </svg>
+                  6K
+                </button>
+                <button class="inter-btn flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#666666"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
+                    />
+                  </svg>
+                  32
+                </button>
+              </div>
+              <button class="main-buttom">Read More</button>
             </div>
-            <div class=" flex flex-col gap-4 lg:w-1/3">
-                <img src="res/news4.svg" alt="">
-                <h5>COVID-19 Variants</h5>
-                <p>Health</p>
-                <div class="flex items-center justify-between">
-                    <div class="flex gap-2">
-                     <button class="inter-btn flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229" />
-                    </svg> 10K</button>
-                     <button class="inter-btn flex gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z" />
-                    </svg> 124</button>
-                    </div>
-                    <button class="main-buttom">Read More</button>
-                </div>
+          </div>
+
+          <!-- Fourth News Article Section -->
+          <div class="flex flex-col gap-4 lg:w-1/3">
+            <img src="res/news4.svg" alt="" />
+            <h5>COVID-19 Variants</h5>
+            <p>Health</p>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-2">
+                <button class="inter-btn flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#666666"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M12 7.23c-1.733-3.924-5.764-4.273-7.641-2.562c-1.529 1.373-2.263 4.665-.867 7.695C5.9 17.573 12 20.309 12 20.309s6.101-2.736 8.508-7.946c1.396-3.03.662-6.322-.867-7.695C17.764 2.957 13.733 3.306 12 7.229"
+                    />
+                  </svg>
+                  10K
+                </button>
+                <button class="inter-btn flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#666666"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="m14 10l-3 3m9.288-9.969a.535.535 0 0 1 .68.681l-5.924 16.93a.535.535 0 0 1-.994.04l-3.219-7.242a.54.54 0 0 0-.271-.271l-7.242-3.22a.535.535 0 0 1 .04-.993z"
+                    />
+                  </svg>
+                  22
+                </button>
+              </div>
+              <button class="main-buttom">Read More</button>
             </div>
-            
+          </div>
         </div>
       </section>
     </main>
     <!-- this is the footer  -->
-     <footer id="footer" class=" px-[2rem] lg:px-[5rem] pt-[3rem] border-t border-bordercolor">
-        <div class="flex flex-wrap justify-between items-start gap-14 mb-[1rem]">
-            <div>
-                <h4>Home</h4>
-                <ul>
-                    <li>Features</li>
-                    <li>Blogs</li>
-                    <li>Resources</li>
-                    <li>Testimonials</li>
-                    <li>Contact Us</li>
-                    <li>Newsletter</li>
-                </ul>
-            </div>
-            <div>
-                <h4>News</h4>
-                <ul>
-                    <li>Trending Stories</li>
-                    <li>Featured Videos</li>
-                    <li>Technology</li>
-                    <li>Health</li>
-                    <li>Politics</li>
-                    <li>Environment</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Blogs</h4>
-                <ul>
-                    <li>Quantum Computing</li>
-                    <li>AI Ethics</li>
-                    <li>Space Exploration</li>
-                    <li>Biotechnology</li>
-                    <li>Renewable Energy</li>
-                    <li>Biohacking</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Podcasts</h4>
-                <ul>
-                    <li>AI Revolution</li>
-                    <li>AI Revolution</li>
-                    <li>TechTalk AI</li>
-                    <li>AI Conversations</li>
-                </ul>
-            </div>
-            <div class="flex flex-wrap lg:flex-col gap-2">
-                <h4 class="w-full">Resources</h4>
-                <button class="main-buttom">Whitepapers</button>
-                <button class="main-buttom">Ebooks</button>
-                <button class="main-buttom">Reports</button>
-                <button class="main-buttom">Research Papers</button>
-            </div>
+    <footer
+      id="footer"
+      class="px-[2rem] lg:px-[5rem] pt-[3rem] border-t border-bordercolor"
+    >
+      <!-- Footer navigation section -->
+      <div class="flex flex-wrap justify-between items-start gap-14 mb-[1rem]">
+        <!-- Home links section -->
+        <div>
+          <h4>Home</h4>
+          <ul>
+            <li>Features</li>
+            <li>Blogs</li>
+            <li>Resources</li>
+            <li>Testimonials</li>
+            <li>Contact Us</li>
+            <li>Newsletter</li>
+          </ul>
         </div>
-        <div class="flex flex-col gap-4 lg:flex-row justify-between items-center py-[2rem] border-t border-bordercolor ">
-            <p>Terms & Conditions|Privacy Policy</p>
-            <div class="flex gap-4 order-first lg:order-none">
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#fff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
-                </svg> </a>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#fff" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
-                </svg> </a>
-            </div>
-            <p>© 2024 FutureTech. All rights reserved.</p>
+
+        <!-- News links section -->
+        <div>
+          <h4>News</h4>
+          <ul>
+            <li>Trending Stories</li>
+            <li>Featured Videos</li>
+            <li>Technology</li>
+            <li>Health</li>
+            <li>Politics</li>
+            <li>Environment</li>
+          </ul>
         </div>
-     </footer>
+
+        <!-- Blogs links section -->
+        <div>
+          <h4>Blogs</h4>
+          <ul>
+            <li>Quantum Computing</li>
+            <li>AI Ethics</li>
+            <li>Space Exploration</li>
+            <li>Biotechnology</li>
+            <li>Renewable Energy</li>
+            <li>Biohacking</li>
+          </ul>
+        </div>
+
+        <!-- Podcasts links section -->
+        <div>
+          <h4>Podcasts</h4>
+          <ul>
+            <li>AI Revolution</li>
+            <li>TechTalk AI</li>
+            <li>AI Conversations</li>
+          </ul>
+        </div>
+
+        <!-- Resources section with buttons for downloading content -->
+        <div class="flex flex-wrap lg:flex-col gap-2">
+          <h4 class="w-full">Resources</h4>
+          <button class="main-buttom">Whitepapers</button>
+          <button class="main-buttom">Ebooks</button>
+          <button class="main-buttom">Reports</button>
+          <button class="main-buttom">Research Papers</button>
+        </div>
+      </div>
+
+      <!-- Footer bottom section with legal info and social media icons -->
+      <div
+        class="flex flex-col gap-4 lg:flex-row justify-between items-center py-[2rem] border-t border-bordercolor"
+      >
+        <!-- Terms and Conditions & Privacy Policy links -->
+        <p>Terms & Conditions | Privacy Policy</p>
+
+        <!-- Social media icons for interaction -->
+        <div class="flex gap-4 order-first lg:order-none">
+          <!-- Facebook Icon -->
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fff"
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+              />
+            </svg>
+          </a>
+
+          <!-- Twitter Icon -->
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fff"
+                d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Copyright text -->
+        <p>© 2024 FutureTech. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
